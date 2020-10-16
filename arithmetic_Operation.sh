@@ -43,3 +43,7 @@ done
 
 echo "Results from array are : "
 echo ${arrayOperation[@]}
+
+sortedDesc=($(printf '%s\n' "${arrayOperation[@]}" | sort -nr ))
+echo "Sorted in Decending order : ${sortedDesc[@]}"
+
