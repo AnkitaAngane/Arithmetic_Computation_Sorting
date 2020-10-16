@@ -33,5 +33,13 @@ dictOperation[operation2]=$operation2
 dictOperation[operation3]=$operation3
 dictOperation[operation4]=$operation4
 
-echo "All results are : "
+echo "All results stored in dictionary are : "
 echo ${!dictOperation[@]} ${dictOperation[@]}
+
+for (( i=1; i<=${#dictOperation[@]}; i++ ))
+do
+	arrayOperation[$i]=${dictOperation[operation$i]}
+done
+
+echo "Results from array are : "
+echo ${arrayOperation[@]}
