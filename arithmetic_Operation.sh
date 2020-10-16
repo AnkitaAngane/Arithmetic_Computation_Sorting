@@ -22,3 +22,7 @@ echo "number1 * number2 + number3 : $operation2"
 operation3=`awk "BEGIN{print ($number3 + ( $number1 / $number2 )) }"`
 echo "number3 + number1 /number2 : $operation3"
 
+#Fourth Computation
+operation4=$(( (number1 % number2) + number3 ))
+echo "number1 % number2 + number3 : $operation4"
+
