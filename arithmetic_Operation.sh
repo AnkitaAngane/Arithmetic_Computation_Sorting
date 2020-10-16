@@ -47,3 +47,6 @@ echo ${arrayOperation[@]}
 sortedDesc=($(printf '%s\n' "${arrayOperation[@]}" | sort -nr ))
 echo "Sorted in Decending order : ${sortedDesc[@]}"
 
+sortedAsce=($(printf '%s\n' "${arrayOperation[@]}" | sort ))
+echo "Sorted in Ascending order : ${sortedAsce[@]}"
+
