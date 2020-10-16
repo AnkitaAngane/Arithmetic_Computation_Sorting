@@ -18,3 +18,7 @@ echo "number1 + number2 * number3 : $operation1"
 operation2=$(( ( number1 * number2 ) + number3 ))
 echo "number1 * number2 + number3 : $operation2"
 
+#Third Computation
+operation3=`awk "BEGIN{print ($number3 + ( $number1 / $number2 )) }"`
+echo "number3 + number1 /number2 : $operation3"
+
