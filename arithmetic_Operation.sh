@@ -9,3 +9,7 @@ read -p "Enter Second Number : " number2
 read -p "Enter Third Number : " number3
 
 echo "Your numbers are : $number1 $number2 $number3"
+
+operation1=$(( number1 + ( number2 * number3 )))
+
+echo "number1 + number2 * number3 : $operation1"
